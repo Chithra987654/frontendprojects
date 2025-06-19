@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(23, 21, 21);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
