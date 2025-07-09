@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  scroll-padding-top: 100px; /* adjust if navbar height changes */
+}
+body {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image: url(./img/bac\ 4.png);
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 30px 100px;
+}
+
+header h2 {
+  font-size: 2em;
+  color: #359381;
+  margin-right: 10em;
+}
+
+nav a {
+  color: #359381;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+
+nav a:hover,
+nav a.active {
+  background-color: #359381;
+  color: #f9f9f9;
+}
+
+.parallax {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parallax img {
+  position: absolute;
+  top: 5;
+  left: 0;
+  width: 100%;
+}
+
+.sec {
+  background: #003329;
+  padding: 100px;
+  position: relative;
+  top: 50px;
+}
+.sec h2 {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.sec p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+.title {
+  position: absolute;
+  top: 40%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  
+}
+
+.title h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 15px;
+  color: white;
+  text-align: center;
+}
+.title h1 {
+  font-size: 15rem;
+  font-weight: 800;
+  letter-spacing: 50px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  margin: -20px 0;
+  padding-left: 50px;
+}
+p {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.7);
+  width: 70%;
+  text-align: center;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.info-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 18%;
+  z-index: 1;
+}
+
+.third {
+  background: #003329;
+  padding: 100px;
+  position: relative;
+  
+}
+.third h2 {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+/* animation section  */
+
+#text {
+  font-size: 5em;
+  color: #fff;
+  position: absolute;
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  animation: text linear;
+  animation-timeline: view();
+  transform: translateY(-300px);
+}
+@keyframes text {
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #359381;
+    transform: translateY(400px);
+  }
+}
+
+
+#hill1 {
+  animation: hill1 linear;
+  animation-timeline: view();
+  transform: translateY(-200px);
+}
+@keyframes hill1 {
+  100% {
+    transform: translateY(350px);
+  }
+}
+#hill2 {
+  top: 5;
+  animation: hill2 linear;
+  animation-timeline: view();
+  transform: translatex(-200px);
+}
+@keyframes hill2 {
+  100% {
+    transform: translatex(200px);
+  }
+}
+#hill3 {
+  animation: hill3 linear;
+  animation-timeline: view();
+  transform: translatex(-200px);
+}
+@keyframes hill3 {
+  100% {
+    transform: translatex(200px);
+  }
+}
+#leaf {
+  animation: leaf linear;
+  animation-timeline: view();
+  transform: translate(-250px,340px);
+}
+
+
+#hill4,#hill5 {
+  animation: plant linear;
+  animation-timeline: view();
+  transform: translateY(-400px);
+}
+@keyframes plant{
+  100% {
+    transform: translateY(300px);
+  }
+}
+
+
+/*  */
+    .parallaxx {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #f9f9f9;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    .parallax-1 {
+      background-image: url('./img/gavi_pathanamthitta.jpg');
+    }
+
+    .parallax-2 {
+      background-image: url('./img/kerala-cuisine.png');
+    }
+
+    .parallax-3{
+      background-image: url('./img/performing-arts.png');
+    }
+
+    .content p{
+      width: 100%;
+      text-align: center;
+      
+    }
+    
+
+    /*  */
+    @media (max-width: 768px) {
+  .title h1 {
+    font-size: 12vw;
+    letter-spacing: 0.5vw;
+  }
+
+  .title h3 {
+    font-size: 4vw;
+    letter-spacing: 0.2vw;
+  }
+
+  .info-wrap p {
+    font-size: 0.9rem;
+  }
+  .parallax img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+.parallax {
+  overflow: hidden;
+}
+}

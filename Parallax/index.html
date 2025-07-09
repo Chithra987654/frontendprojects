@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kerala Parallax | Responsive</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="top">
+
+  <!-- Responsive Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-4 py-3 fixed-top">
+
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-success me-auto" href="#">Kerala</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-2 mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#top">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Parallax Section -->
+  <section class="parallax position-relative">
+    <img src="./img/bac 2.png" alt="hill1" id="hill1" />
+    <img src="./img/bac 1.png" alt="hill2" id="hill2" />
+    <img src="./img/bac 2.2.png" alt="hill3" id="hill3" />
+    <img src="./img/bac 1.png" alt="hill4" id="hill4" />
+    <img src="./img/bac 2.2.png" alt="hill5" id="hill5" />
+
+    <div class="title text-center">
+      <h3>The Land of Serene Beauty</h3>
+      <h1 id="text">kerala</h1>
+    </div>
+
+    <div class="info-wrap">
+      <div class="container">
+        <p class="mx-auto">
+          Kerala is a tropical paradise in southern India, known for its breathtaking landscapes, rich culture,
+          and serene backwaters. Whether you're seeking adventure, relaxation, or a taste of India's unique
+          traditions, Kerala has something for everyone.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="sec" id="about">
+    <div class="container-fluid">
+      <h2>About</h2>
+      <div class="parallaxx parallax-1">
+        Kerala Visuals
+      </div>
+
+      <div class="content">
+        <p>Here is a bouquet of unforgettable experiences Kerala offers: charming village life, thrilling treks, serene safaris, vibrant farms, unique cuisine, tranquil houseboats and the magic of monsoon. Each moment in Kerala is a story waiting to be told, a memory etched in time.</p>
+      </div>
+
+      <div class="parallaxx parallax-2">
+        Kerala Cuisines
+      </div>
+      <div class="content">
+        <p>Kerala cuisine is a blend of flavors featuring rice, coconut, and spices like pepper, ginger, and cardamom, with seafood being a popular choice due to the state's coastal location. Some of the most well-known dishes include Appam with stew, Puttu and Kadala Curry, and Karimeen Pollichathu. Kerala also offers a variety of breakfast items like Idli, Dosa, Appam, Idiyappam, Puttu, and Pathiri. </p>
+      </div>
+      <div class="parallaxx parallax-3">
+        Artforms and Festivals
+      </div>
+      <div class="content">
+        <p>For more than a thousand years, a great many art form have been raised and nurtured in Kerala. From retelling the great epics to exploring the depths of life and its very meaning, we have been witness to the evolution and growth of these performing arts. From Mohiniyattam to Kathakali, our high-resolution visuals cover a variety of art forms.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Gallery -->
+   <section class="third" id="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="./img/hillstatio.png" class="d-block w-100" alt="...">
+        
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="./img/beaches.png" class="d-block w-100" alt="...">
+        
+      </div>
+      <div class="carousel-item">
+        <img src="./img/backwaters.png" class="d-block w-100" alt="...">
+       
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+    </div>
+   </section>
+
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
